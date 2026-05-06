@@ -18,4 +18,4 @@ class calculator:
 ##best practice - put what you're doing in the code under this function 
 if __name__ == "__main__" : 
     myCalc = calculator(a=3,b=5)
-    print(myCalc.get_sum)
+    print(myCalc.get_sum())
