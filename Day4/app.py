@@ -1,6 +1,5 @@
 ##import requirements
 import pandas as p
-#import numpy as n
 
 ##import book file
 book = p.read_csv('03_Library Systembook.csv')
@@ -31,10 +30,20 @@ book = book.dropna(subset=["Books","Customer ID"])
 print(customers)
 print(book)
 
+
+
+book['LoanLength'] = (book['Book checkout'] - book['Book Returned']).dt.days
+book.loc[book['LoanLength'] <0, "LoanLength"] = 0
+
 ##export data to csv
 book.to_csv("name.csv")
 
-book['datediff'] = (book['Book checkout'] - book['Book Returned']).dt.days
+
+
+
+
+
+
 
 
 
