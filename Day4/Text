@@ -1,0 +1,23 @@
+Overview and architecture
+
+Current solution is inconsistent and fragmented
+Time consuming
+Lack of automation
+
+Risks of error in data entry
+Difficult to maintain or scale the process
+No oversight of process
+
+Decision to automate process
+To implement a fully automated pipeline
+
+Benefits:
+Accuracy of data
+Faster and more standardised process
+Easy access to analytics
+
+Future considerations:
+Error handling and logging for pipeline failures
+CSV files to sql database
+Improve dashboard metrics to include run time, tracking of current metrics over time
+
