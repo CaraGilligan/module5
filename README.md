@@ -1,11 +1,8 @@
-# 20260505-DE5M5
+DAY4 - To do list
 
-#Day 1
-
-## AM Tasks:
-
-1. Create a GitHub Repo and clone it onto your VMs [x]
-2. Create an Architecture Diagram []
-3. Create User Stories and a delivery plan (Scrum or Kanban) []
-
-P.S You can ask me (the business stakeholder) for clarification.
+Tidy up repo
+Check python script 
+Check docker container
+Power BI dashboard
+Risks and Issues doc
+SWAT doc
