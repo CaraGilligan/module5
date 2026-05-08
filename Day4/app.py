@@ -1,6 +1,7 @@
 ##import requirements
 import pandas as p
 
+
 ##import book file
 book = p.read_csv('03_Library Systembook.csv')
 
@@ -35,12 +36,26 @@ print(book)
 book['LoanLength'] = (book['Book checkout'] - book['Book Returned']).dt.days
 book.loc[book['LoanLength'] <0, "LoanLength"] = 0
 
+
+
 ##export data to csv
 book.to_csv("name.csv")
 
+rows_processed = len(book)
+job_name = "library_pipeline"
 
 
+metrics = {
+    "rows_processed":rows_processed,
+    "status": "success",
+    "job_name":job_name
+}
 
+metrics_df = p.DataFrame([metrics])
+
+metrics_df.to_csv("metrics.csv")
+
+print(metrics_df)
 
 
 
